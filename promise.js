@@ -1,6 +1,6 @@
 const mail="mosh@gmail.com";
 const pass=12345;
-
+const drinkingList=["* beer"," ** wine","*** water"," **** Carbonated drinks"," ***** Juice and plant drinks"];
 function getIdByAuth(mail,pass){
    return new Promise((resolve,reject)=>{
         setTimeout(()=>{
@@ -53,7 +53,7 @@ function Choosenmenu(drinkingAllowed){
     return new Promise((resolve,reject)=> {
             setTimeout(() =>{
         if(drinkingAllowed==="true"){
-            const drinkingList=["* beer"," ** wine","*** water"," **** Carbonated drinks"," ***** Juice and plant drinks"]
+        
             return resolve(drinkingList)
         }
         else{
