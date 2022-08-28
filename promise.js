@@ -30,12 +30,12 @@ function getHumanList(id){
     },2000)
 })
 }
-
+const drinkingAllowed=["true","false"]
 function Age(age){
     return new Promise((resolve,reject)=> {
             setTimeout(() =>{
         if(age>18){
-            const drinkingAllowed=["true","false"]
+         
             return resolve(drinkingAllowed[0])
         }
         else if(age<18){
